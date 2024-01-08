@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <script src="
+https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min.js
+"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Another Dumb Project</title>
+</head>
+
+<body>
+  <header>
+    <h1>Another Dumb Project</h1>
+  </header>
+
+  <section class="api-section">
+    <h2>Courses</h2>
+    <button onclick="getCourses()">Get Courses</button>
+    <pre id="courses-response"></pre>
+  </section>
+
+  <section class="api-section">
+    <h2>Course Details</h2>
+    <label for="course-code">Enter Course Code:</label>
+    <input type="text" id="course-code" value="CSEN3201">
+    <button required onclick="getCourseDetails()">Get Course Details</button>
+    <pre id="course-details-response"></pre>
+  </section>
+
+  <section class="api-section">
+    <h2>Modules</h2>
+    <label for="course-code-modules">Enter Course Code:</label>
+    <input type="text" id="course-code-modules" value="CSEN3201">
+    <button onclick="getModules()" required>Get Modules</button>
+    <pre id="modules-response"></pre>
+  </section>
+
+  <section class="api-section">
+    <h2>Subtopics</h2>
+    <label for="course-code-subtopics">Enter Course Code:</label>
+    <input type="text" id="course-code-subtopics" value="CSEN3201">
+    <label for="module-code-subtopics">Enter Module Code:</label>
+    <input type="text" id="module-code-subtopics" value="2">
+    <button onclick="getSubtopics()" required>Get Subtopics</button>
+    <pre id="subtopics-response"></pre>
+  </section>
+  
+  
+  
+  <section class="api-section">
+    <h2>Course Types</h2>
+    <label for="course-type">Select Course Type:</label>
+    <select id="course-type">
+      <option value="mandatory theory">Mandatory Theory</option>
+      <option value="Professional Elective II">Professional Elective II</option>
+    </select>
+    <button required onclick="getCourseType()">Get Course Details</button>
+    <pre id="course-type-response"></pre>
+  </section>
+  
+  
+
+  <section class="api-section">
+    <h2>Textbooks</h2>
+    <label for="course-code-textbooks">Enter Course Code:</label>
+    <input type="text" id="course-code-textbooks" value="CSEN3201">
+    <button onclick="getTextbooks()" required>Get Textbooks</button>
+    <pre id="textbooks-response"></pre>
+  </section>
+
+  <section class="api-section">
+    <h2>Reference Books</h2>
+    <label for="course-code-referencebooks">Enter Course Code:</label>
+    <input type="text" id="course-code-referencebooks" value="CSEN3201">
+    <button onclick="getReferenceBooks()" required>Get Reference Books</button>
+    <pre id="referencebooks-response"></pre>
+  </section>
+
+  <script src="client.js"></script>
+</body>
+
+</html>
