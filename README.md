@@ -1,6 +1,8 @@
 # Rest API for Syllabus
  
-# API Endpoints [ Main URL : https://deciduous-functional-bit.glitch.me/]
+# API Endpoints 
+
+***[ Main URL : https://deciduous-functional-bit.glitch.me/]***
 
 ## 1. Get All Courses
 - **Endpoint:** `/courses`
