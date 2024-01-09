@@ -19,6 +19,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
   <section class="api-section">
     <h2>Courses</h2>
     <button onclick="getCourses()">Get Courses</button>
+    <p id="final-url-courses"></p>
     <pre id="courses-response"></pre>
   </section>
 
@@ -27,6 +28,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
     <label for="course-code">Enter Course Code:</label>
     <input type="text" id="course-code" value="CSEN3201">
     <button required onclick="getCourseDetails()">Get Course Details</button>
+    <p id="final-url-coursecode"></p>
     <pre id="course-details-response"></pre>
   </section>
 
@@ -35,6 +37,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
     <label for="course-code-modules">Enter Course Code:</label>
     <input type="text" id="course-code-modules" value="CSEN3201">
     <button onclick="getModules()" required>Get Modules</button>
+    <p id="final-url-coursemodule"></p>
     <pre id="modules-response"></pre>
   </section>
 
@@ -45,6 +48,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
     <label for="module-code-subtopics">Enter Module Code:</label>
     <input type="text" id="module-code-subtopics" value="2">
     <button onclick="getSubtopics()" required>Get Subtopics</button>
+    <p id="final-url-subtopics"></p>
     <pre id="subtopics-response"></pre>
   </section>
   
@@ -58,6 +62,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
       <option value="Professional Elective II">Professional Elective II</option>
     </select>
     <button required onclick="getCourseType()">Get Course Details</button>
+    <p id="final-url-coursetype"></p>
     <pre id="course-type-response"></pre>
   </section>
   
@@ -68,6 +73,7 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
     <label for="course-code-textbooks">Enter Course Code:</label>
     <input type="text" id="course-code-textbooks" value="CSEN3201">
     <button onclick="getTextbooks()" required>Get Textbooks</button>
+    <p id="final-url-textbooks"></p>
     <pre id="textbooks-response"></pre>
   </section>
 
@@ -76,9 +82,14 @@ https://cdn.jsdelivr.net/npm/json-formatter-js@2.3.4/dist/json-formatter.umd.min
     <label for="course-code-referencebooks">Enter Course Code:</label>
     <input type="text" id="course-code-referencebooks" value="CSEN3201">
     <button onclick="getReferenceBooks()" required>Get Reference Books</button>
+    <p id="final-url-reference"></p>
     <pre id="referencebooks-response"></pre>
   </section>
-
+  <div style="text-align: center; padding-top: 45px;" class="github-card">
+      <a href="https://github.com/Enigma-52/Rest-API-for-Syllabus" target="_blank">
+          <img src="https://img.shields.io/badge/GitHub-Repo-181717?style=for-the-badge&logo=github" alt="GitHub Repo">
+      </a>
+  </div>
   <script src="client.js"></script>
 </body>
 
